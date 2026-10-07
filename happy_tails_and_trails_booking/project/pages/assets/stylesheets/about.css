@@ -1,0 +1,146 @@
+/* Stylesheet. */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --navbar-color: #C4C4C4;
+  --introduction-panel-color: #A1D0FF;
+  --info-panel-color: #7C95D6;
+  --default-text-color: #2f4f4f;
+  --button-hovercolor: #E5E5E5;
+}
+
+/* Default Values +++ */
+html,body {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  color: var(--default-text-color)
+}
+/* Default Values --- */
+
+/* Webpage Styling +++ */
+
+div.introduction_panel {
+  width: 100vw;
+  height: 100vh;
+  padding: 0.2rem;
+  background-color: var(--introduction-panel-color);
+  color: #ffffff
+}
+
+div.introduction_panel h1 {
+  text-align: center;
+  padding-top: 1em;
+  text-decoration: underline;
+  margin: 0;
+  margin-bottom: 2%;
+}
+
+div.introduction_panel h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+div.introduction_panel img {
+  width: 50vw;
+  height: 75vh;
+  min-width: 700px;
+  max-width: 1500px;
+  min-height: 400px;
+  max-height: 750px;
+  display: block;
+  margin: auto;
+  margin-top: 1.5em;
+  border-radius: 20px;
+  box-shadow: 10px 11px 10px 0px rgba(0, 0, 0, 20%) /* (x-offset, y-offset, blur, spread ALL in px) */
+}
+
+@media (max-width: 600px) {
+
+
+  html, body {
+    width: min-content;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+
+  }
+  div.introduction_panel {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10% 10%;
+  }
+
+  .introduction_panel p {
+    margin: 0;
+  }
+  div.introduction_panel h1 {
+    font-size: 1.5em;
+  }
+  div.introduction_panel #container_21 {
+    height: 155%;
+  }
+  div.introduction_panel img {
+    display: block;
+    margin: 0 auto;
+    height: 100vh;
+    transform: scale(0.5) translateY(-6em);
+  }
+
+
+
+}
+
+/* Mobile Styling +++ */
