@@ -1,0 +1,184 @@
+*. *::before. *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #fef6f3;
+}
+
+#site_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+div.introduction_panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /*border: 5px solid #ff0000;*/
+    padding: 2%;
+    font-family: "Fredoka One", sans-serif;
+    margin: 2%;
+}
+
+.instruction_panel {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    /*border: 5px solid #00ff00;*/
+    min-width: 150px;
+    min-height: 150px;
+    padding: 5%;
+    margin: 5%;
+    background-color: #f1ebdf;
+    border-radius: 10px;
+    font-family: sans-serif;
+}
+
+.heart_icon {
+    height: 30px;
+    width: 30px;
+}
+.instruction_panel .top_row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.instruction_panel .numbering {
+    display: none;
+}
+
+.services_panel {
+    /*border: 5px solid #0000ff;*/
+    padding: 5%;
+}
+
+.services_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+#container_51 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+[class="serv icon-cont"] {
+    background-color: #fdebe7;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+}
+
+
+[class="serv icon-cont"] p {
+    display: none;
+}
+
+[class="serv icon-cont"] img {
+    transform: scale(0.6);
+}
+#container_51 #dog-walking {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    font-family: sans-serif;
+}
+#container_51 #dog-walking img {
+    height: 60px;
+    width: 60px;
+}
+
+#container_51 #drop-in {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    font-family: sans-serif;
+}
+#container_51 #drop-in img {
+    height: 60px;
+    width: 60px;
+}
+
+#container_51 #overnight {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    font-family: sans-serif;
+}
+#container_51 #overnight img {
+    height: 60px;
+    width: 60px;
+}
+
+#container_51 #grooming {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+    font-family: sans-serif;
+}
+
+#container_51 #grooming img {
+    height: 60px;
+    width: 60px;
+}
+
+.footer_panel {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    /*border: 5px dotted #ff0000;*/
+    background-color: #fdebe7;
+    margin: 2%;
+    padding: 5%;
+    font-family: sans-serif;
+    border-radius: 10px;
+}
+
+.footer_panel img {
+    transform: scale(0.6, 0.8);
+}
+
+.footer_panel #footer_h2 {
+    font-size: 20px;
+}
+/* DESKTOP STYLING +++ */
+@media (min-width: 782px) {
+    .introduction_panel #sp_heart_icon {
+        padding-bottom: 1%;
+    }
+    .instruction_panel {
+        padding: 1%;
+        border-radius: 20px;
+        width: 60vw;
+        max-width: 900px;
+        max-height: 400px;
+        margin: 1%;
+    }
+    .services_panel {
+        padding: 2%;
+    }
+
+    .footer_panel {
+        max-width: 900px;
+        max-height: 400px;
+        padding: 2%;
+    }
+
+    .footer_panel img {
+        transform: scale(0.45);
+    }
+}
+
+/* DESKTOP STYLING --- */

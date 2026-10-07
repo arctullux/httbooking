@@ -1,0 +1,154 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+:root {
+  --navbar-color: #C4C4C4;
+  --introduction-panel-color: #A1D0FF;
+  --info-panel-color: #7C95D6;
+  --default-text-color: #444;
+  --text-color-2: #315D44;
+  --button-hovercolor: #E5E5E5;
+  --background-color: #fbeaed;
+  --halo_baby-background-color: #f4ddeb;
+  --halo_baby-title-color: #75cdc7;
+}
+
+/* Default Values +++ */
+html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  /*background-image: url("../images/background_image.png");*/
+  /*background-size: cover;*/
+  /*background-position: center;*/
+  /*background-repeat: no-repeat;*/
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+  padding-top: 7rem;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-size: 5rem;
+  color: var(--text-color-2)
+}
+
+h2 {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+h3 {
+  padding: 0;
+  margin: 0;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  font-style: normal;
+  color: var(--default-text-color)
+}
+
+p {
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  font-family: "Google Sans", sans-serif;
+  font-style: normal;
+  font-weight: 350;
+  font-size: 1.7rem;
+  color: var(--default-text-color)
+}
+/* Default Values --- */
+
+/* Webpage Styling +++ */
+
+#page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div.gallery img {
+  margin-top: 2%;
+  width: 80vw;
+  max-width: 900px;
+  max-height: 890px;
+  margin-bottom: 5%;
+}
+
+#halo_babies {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 3%;
+  background-color: var(--halo_baby-background-color);
+}
+#halo_babies h1 {
+  color: var(--halo_baby-title-color)
+}
+#halo_babies h2 {
+  margin-bottom: 2%;
+  font-family: cursive;
+  font-size: calc(100% + 25px);
+}
+@media (max-width: 600px) {
+
+  div.title h1 {
+    font-size: 2em;
+    padding-top: 1.5em;
+  }
+
+  div.title h2 {
+    font-size: 1.5em;
+  }
+
+  #halo_babies {
+    width: 100svw;
+    height: 100svh;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  #halo_babies h1 {
+    font-size: 2em;
+    padding-top: 1.5em;
+  }
+
+  #halo_babies h2 {
+    font-size: 1.5em;
+    margin-bottom: 10%;
+    text-wrap: nowrap;
+  }
+
+  #halo_babies img {
+    width: 300px;
+
+  }
+}
+

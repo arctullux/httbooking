@@ -1,0 +1,228 @@
+/* Stylesheet. */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+:root {
+    --navbar-color: #C4C4C4;
+    --introduction-panel-color: #A1D0FF;
+    --debug-color-1: #81da61;
+    --info-panel-color: #7C95D6;
+    --default-text-color: #000033;
+    --button-hovercolor: #232323;
+}
+
+/* Default Values +++ */
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+body h1 {
+    display: none;
+}
+
+h1 {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+    color: var(--default-text-color)
+}
+
+h2 {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+    color: var(--default-text-color)
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+    color: var(--default-text-color);
+}
+h4 {
+    color: var(--default-text-color);
+}
+a {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+    color: var(--default-text-color)
+}
+p {
+    padding: 0;
+    margin: 0;
+    font-family: "Google Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--default-text-color)
+}
+
+/* Default Values --- */
+
+/* Mobile Styling +++ */
+
+
+
+
+/* Mobile Styling --- */
+
+/* Webpage Styling +++ */
+
+#debug_banner {
+    display: none;
+}
+div.introduction_panel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0.2rem;
+    background-color: var(--introduction-panel-color);
+    color: #ffffff
+}
+
+div.introduction_panel h1 {
+    display: block;
+    margin-top: 5%;
+}
+div.introduction_panel h2 {
+    text-align: center;
+    padding: 0;
+    margin-top: 2%;
+    font-size: 1.2em;
+}
+
+div.introduction_panel img {
+    display: block;
+    margin: auto;
+    max-height: 700px;
+    max-width: 1500px;
+    border-radius: 20px;
+    box-shadow: 10px 11px 10px 0px rgba(0, 0, 0, 20%) /* (x-offset, y-offset, blur, spread ALL in px) */
+}
+div.info_panel {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    background-color: var(--info-panel-color);
+    padding-top: 2%;
+}
+
+
+div.info_panel #content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+#container_14 {
+    margin-right: 2%;
+}
+
+div.info_panel p {
+    font-size: 1.4em;
+}
+
+div.info_panel h3 {
+    font-size: 2em;
+}
+
+div.info_panel .btn_to_about_page {
+    margin: 0 auto;
+    margin-top: 2em;
+    background-color: black;
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+
+}
+div.info_panel .btn_to_about_page a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+
+}
+div.info_panel button:hover {
+    background-color: var(--button-hovercolor);
+}
+
+div.image_overlay {
+    position: absolute;
+    top: 1em;
+    left: 1.5em;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+div.image_overlay h1 {
+    padding: 0 1rem;
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+/* Webpage Styling --- */
+
+/* Mobile Styling +++ */
+
+@media (max-width: 600px) {
+    html, body {
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        min-height: 100dvh;
+    }
+
+    #debug_banner {
+        display: none;
+        background-color: indianred;
+        height: auto;
+        width: 100vw;
+    }
+
+    #debug_banner p {
+        color: #fff;
+    }
+    div.introduction_panel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.introduction_panel h1 {
+        font-size: 1.5em;
+    }
+
+    #photo {
+        transform: scale(0.5);
+    }
+    /*div.introduction_panel img {*/
+    /*  display: block;*/
+    /*  margin: auto;*/
+    /*  object-fit: fill;*/
+    /*}*/
+    div.info_panel {
+        min-height: 100svh;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    div.info_panel #content h3 {
+        font-size: 21px;
+    }
+}
+/* Mobile Styling --- */
