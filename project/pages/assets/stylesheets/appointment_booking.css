@@ -177,7 +177,7 @@ div.introduction_panel {
     }
 
     .footer_panel img {
-        transform: scale(1.45);
+        transform: scale(0.45) transformY(-80%);
     }
 }
 
